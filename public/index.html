@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParallelOne: Master Design with Roboto, Color Palettes & Typography</title>
+    <meta name="description" content="Explore ParallelOne, your guide to mastering web design with Roboto font, harmonious color schemes, and expert typography. Discover UI/UX insights and templates.">
+    <meta name="keywords" content="Web Design, Typography, Color Palettes, Website Templates, UI/UX Design, parallel, Roboto font, ParallelOne, sunset color scheme">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/font-roboto-name-paral">
+    <meta property="og:title" content="ParallelOne: Master Design with Roboto, Color Palettes & Typography">
+    <meta property="og:description" content="Explore ParallelOne, your guide to mastering web design with Roboto font, harmonious color schemes, and expert typography. Discover UI/UX insights and templates.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=ParallelOne+Design">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://example.com/font-roboto-name-paral">
+    <meta property="twitter:title" content="ParallelOne: Master Design with Roboto, Color Palettes & Typography">
+    <meta property="twitter:description" content="Explore ParallelOne, your guide to mastering web design with Roboto font, harmonious color schemes, and expert typography. Discover UI/UX insights and templates.">
+    <meta property="twitter:image" content="https://via.placeholder.com/1200x630.png?text=ParallelOne+Design">
+
+    <link rel="canonical" href="https://example.com/font-roboto-name-paral">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ParallelOne",
+      "url": "https://example.com/font-roboto-name-paral",
+      "logo": "https://via.placeholder.com/60x60.png?text=P1",
+      "description": "First parallel test site focusing on web design, typography, and color palettes.",
+      "sameAs": [
+        "https://twitter.com/example",
+        "https://linkedin.com/company/example"
+      ]
+    }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary-color: #059669; /* emerald-600 */
+            --secondary-color: #ecfdf5; /* emerald-50 */
+            --accent-color: #047857; /* emerald-700 */
+            --text-color: #1f2937; /* gray-800 */
+            --light-text-color: #6b7280; /* gray-500 */
+            --white-color: #ffffff;
+            --border-color: #d1d5db; /* gray-300 */
+            --error-color: #dc2626; /* red-600 */
+
+            --font-family-primary: 'Inter', sans-serif;
+            --max-width: 1200px;
+            --header-height: 64px;
+        }
+
+        /* Base Styles & Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family-primary);
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--white-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 0.5em;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem; /* 6px */
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            transform: translateY(-2px);
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.025em;
+        }
+
+        /* Navigation */
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-color);
+            font-weight: 500;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Mobile Nav Toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            position: relative;
+            z-index: 1001;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--text-color);
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .menu-toggle.open span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+
+        .menu-toggle.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.open span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--secondary-color);
+            padding: 8rem 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            min-height: calc(100vh - var(--header-height));
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2.5rem auto;
+            color: var(--light-text-color);
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 6rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .grid-3-cols {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-item {
+            background-color: var(--white-color);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item svg {
+            color: var(--accent-color);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-color);
+        }
+
+        .feature-item p {
+            color: var(--light-text-color);
+            font-size: 1rem;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about-content p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--light-text-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background-color: var(--white-color);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 2.5rem;
+            text-align: center;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 8px 25px rgba(5, 150, 105, 0.1);
+        }
+
+        .service-card svg {
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .service-card p {
+            color: var(--light-text-color);
+        }
+
+        /* Tool Section Styling */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
+
+        .tool-card {
+            background-color: var(--white-color);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 3rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .tool-card h3 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .tool-form {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="color"],
+        .form-group select {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.375rem;
+            font-family: var(--font-family-primary);
+            font-size: 1rem;
+            color: var(--text-color);
+            background-color: var(--white-color);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.2);
+        }
+
+        .form-group .error-message {
+            color: var(--error-color);
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .tool-results {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: var(--secondary-color);
+            border-radius: 0.5rem;
+            border: 1px dashed var(--primary-color);
+        }
+
+        .tool-results h4 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        /* Color Palette Results */
+        .color-palette-display {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .color-swatch {
+            width: 80px;
+            height: 80px;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            color: var(--white-color);
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .color-swatch span {
+            display: block;
+            text-align: center;
+        }
+
+        /* Font Pairing Results */
+        .font-pairing-display {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .font-pair-item {
+            background-color: var(--white-color);
+            border: 1px solid var(--primary-color);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .font-pair-item p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--light-text-color);
+        }
+        .font-pair-item .heading-preview {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+            color: var(--text-color);
+        }
+        .font-pair-item .body-preview {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: var(--light-text-color);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--text-color);
+            color: var(--white-color);
+            padding: 4rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.025em;
+        }
+
+        .footer-nav-list {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-nav-link {
+            color: var(--white-color);
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .footer-nav-link:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            color: var(--white-color);
+            font-size: 1.5rem;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .social-link:hover {
+            color: var(--primary-color);
+            transform: translateY(-3px);
+            text-decoration: none;
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            color: var(--border-color);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.75rem;
+            }
+
+            .hero p {
+                font-size: 1.15rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .feature-item h3 {
+                font-size: 1.3rem;
+            }
+
+            .service-card h3 {
+                font-size: 1.5rem;
+            }
+
+            .tool-card h3 {
+                font-size: 1.75rem;
+            }
+
+            .tool-card {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: var(--header-height);
+                left: 0;
+                width: 100%;
+                background-color: var(--white-color);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 1.5rem 0;
+                border-top: 1px solid var(--border-color);
+            }
+
+            .nav-list.open {
+                display: flex;
+            }
+
+            .nav-item {
+                margin: 0;
+                text-align: center;
+            }
+
+            .nav-item:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+            .nav-link {
+                display: block;
+                padding: 0.75rem 0;
+                font-size: 1.1rem;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .hero {
+                padding: 6rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 4rem 0;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .tool-card {
+                padding: 1.5rem;
+            }
+
+            .tool-card h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .tool-form {
+                gap: 1rem;
+            }
+
+            .color-swatch {
+                width: 70px;
+                height: 70px;
+            }
+
+            .font-pair-item .heading-preview {
+                font-size: 1.8rem;
+            }
+            .font-pair-item .body-preview {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+
+            .btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .color-swatch {
+                width: 60px;
+                height: 60px;
+                font-size: 0.75rem;
+            }
+
+            .footer-nav-list {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
+            .social-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#hero" class="logo">ParallelOne</a>
+            <nav class="main-nav">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#tools" class="nav-link">Tools</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>Elevate Your Design with ParallelOne</h1>
+                <p>Discover harmonious fonts, captivating color palettes, and seamless web experiences. This is our first parallel test, built with the clean 'Roboto' aesthetic and a vibrant sunset color scheme.</p>
+                <a href="#tools" class="btn btn-primary">Explore Our Tools</a>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <div class="container">
+                <h2 class="section-title">Unlock Your Creative Potential</h2>
+                <div class="grid-3-cols">
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-palette"><circle cx="12" cy="12" r="10"></circle><path d="M5.62 10.02a3.48 3.48 0 0 0 0 3.96"></path><path d="M18.38 10.02a3.48 3.48 0 0 1 0 3.96"></path><path d="M12 2a3.48 3.48 0 0 0-3.48 3.48c0 2.22 3.48 3.48 3.48 3.48s3.48 1.26 3.48-3.48A3.48 3.48 0 0 0 12 2z"></path><path d="M12 15a3.48 3.48 0 0 0-3.48 3.48c0 2.22 3.48 3.48 3.48 3.48s3.48 1.26 3.48-3.48A3.48 3.48 0 0 0 12 15z"></path></svg>
+                        <h3>Harmonious Color Palettes</h3>
+                        <p>Generate stunning color schemes tailored to your project. Say goodbye to guesswork and embrace visual harmony with our intuitive generator.</p>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-type"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
+                        <h3>Perfect Font Pairings</h3>
+                        <p>Discover the art of typography. Our tool helps you pair fonts that enhance readability and aesthetics, making your content shine.</p>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        <h3>Responsive by Design</h3>
+                        <p>Craft beautiful interfaces that look flawless on any device. We prioritize mobile-first development for modern web experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About ParallelOne: Your Design Companion</h2>
+                <div class="about-content">
+                    <p>ParallelOne emerged from a passion for elegant design and functional utility. We believe that exceptional web experiences begin with thoughtful choices in typography and color. This platform is our 'First parallel test' to provide designers and developers with intuitive tools that simplify complex design decisions.</p>
+                    <p>Our commitment is to foster creativity by offering resources that are both powerful and easy to use. With a focus on modern aesthetics, like the clean lines of the Roboto font and the warmth of a sunset color scheme, we aim to inspire and equip you for your next great project.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="section">
+            <div class="container">
+                <h2 class="section-title">Interactive Design Tools</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>Color Palette Generator</h3>
+                        <form id="color-palette-form" class="tool-form">
+                            <div class="form-group">
+                                <label for="base-color">Base Color (Hex or Name):</label>
+                                <input type="text" id="base-color" placeholder="#059669 or emerald" value="#059669">
+                                <span class="error-message" id="base-color-error">Please enter a valid hex color (e.g., #RRGGBB) or a common color name.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="harmony-type">Harmony Type:</label>
+                                <select id="harmony-type">
+                                    <option value="analogous">Analogous</option>
+                                    <option value="complementary">Complementary</option>
+                                    <option value="triadic">Triadic</option>
+                                    <option value="monochromatic">Monochromatic</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Generate Palette</button>
+                        </form>
+                        <div id="color-palette-results" class="tool-results" style="display: none;">
+                            <h4>Generated Palette</h4>
+                            <div class="color-palette-display" id="palette-display">
+                                <!-- Colors will be injected here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <h3>Font Pairing Tool</h3>
+                        <form id="font-pairing-form" class="tool-form">
+                            <div class="form-group">
+                                <label for="heading-font">Heading Font (e.g., Roboto, Inter):</label>
+                                <input type="text" id="heading-font" placeholder="Inter" value="Inter">
+                                <span class="error-message" id="heading-font-error">Please enter a font name.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="body-font-category">Body Font Category:</label>
+                                <select id="body-font-category">
+                                    <option value="sans-serif">Sans-serif</option>
+                                    <option value="serif">Serif</option>
+                                    <option value="monospace">Monospace</option>
+                                    <option value="display">Display</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Suggest Pairings</button>
+                        </form>
+                        <div id="font-pairing-results" class="tool-results" style="display: none;">
+                            <h4>Suggested Pairings</h4>
+                            <div class="font-pairing-display" id="pairing-display">
+                                <!-- Font pairings will be injected here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="about-content">
+                    <p>Have questions or feedback about our tools? We'd love to hear from you!</p>
+                    <a href="mailto:info@example.com" class="btn btn-secondary">Email Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="#hero" class="footer-logo">ParallelOne</a>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="#hero" class="footer-nav-link">Home</a></li>
+                    <li class="footer-nav-item"><a href="#features" class="footer-nav-link">Features</a></li>
+                    <li class="footer-nav-item"><a href="#about" class="footer-nav-link">About</a></li>
+                    <li class="footer-nav-item"><a href="#tools" class="footer-nav-link">Tools</a></li>
+                    <li class="footer-nav-item"><a href="#contact" class="footer-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                <a href="#" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                <a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            </div>
+            <p class="copyright">&copy; 2023 ParallelOne. All rights reserved. Built with Roboto.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links and mobile menu closing
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    const headerOffset = document.querySelector('.header').offsetHeight;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+
+                    // Close mobile menu if open
+                    const navList = document.getElementById('nav-list');
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (navList.classList.contains('open')) {
+                        navList.classList.remove('open');
+                        mobileMenu.classList.remove('open');
+                    }
+                }
+            });
+        });
+
+        // Active navigation link highlighting
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-list .nav-link');
+
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.7
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${entry.target.id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+
+        // Color Palette Generator Tool
+        document.getElementById('color-palette-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const baseColorInput = document.getElementById('base-color');
+            const harmonyType = document.getElementById('harmony-type').value;
+            const baseColorError = document.getElementById('base-color-error');
+            const resultsDisplay = document.getElementById('color-palette-results');
+            const paletteDisplay = document.getElementById('palette-display');
+
+            // --- Validation ---
+            const hexRegex = /^#([0-9a-fA-F]{3}){1,2}$/;
+            const colorNameRegex = /^[a-zA-Z]+$/;
+            let baseColorValue = baseColorInput.value.trim();
+
+            if (baseColorValue === '') {
+                baseColorError.textContent = 'Base color cannot be empty.';
+                baseColorError.style.display = 'block';
+                resultsDisplay.style.display = 'none';
+                return;
+            }
+
+            let hexColor = '';
+            if (hexRegex.test(baseColorValue)) {
+                hexColor = baseColorValue;
+            } else if (colorNameRegex.test(baseColorValue)) {
+                // Attempt to convert common color names to hex
+                const tempDiv = document.createElement('div');
+                tempDiv.style.color = baseColorValue;
+                document.body.appendChild(tempDiv);
+                const computedColor = getComputedStyle(tempDiv).color;
+                document.body.removeChild(tempDiv);
+
+                if (computedColor.startsWith('rgb')) {
+                    const rgb = computedColor.match(/\d+/g);
+                    if (rgb && rgb.length >= 3) {
+                        hexColor = '#' + ((1 << 24) + (parseInt(rgb[0]) << 16) + (parseInt(rgb[1]) << 8) + parseInt(rgb[2])).toString(16).slice(1).toUpperCase();
+                    }
+                }
+            }
+
+            if (!hexColor) {
+                baseColorError.textContent = 'Please enter a valid hex color (e.g., #RRGGBB) or a common color name.';
+                baseColorError.style.display = 'block';
+                resultsDisplay.style.display = 'none';
+                return;
+            }
+
+            baseColorError.style.display = 'none';
+
+            // --- Color Conversion Helpers ---
+            function hexToRgb(hex) {
+                const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+                hex = hex.replace(shorthandRegex, function (m, r, g, b) {
+                    return r + r + g + g + b + b;
+                });
+                const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+                return result ? {
+                    r: parseInt(result[1], 16),
+                    g: parseInt(result[2], 16),
+                    b: parseInt(result[3], 16)
+                } : null;
+            }
+
+            function rgbToHsl(r, g, b) {
+                r /= 255, g /= 255, b /= 255;
+                const max = Math.max(r, g, b), min = Math.min(r, g, b);
+                let h, s, l = (max + min) / 2;
+
+                if (max === min) {
+                    h = s = 0; // achromatic
+                } else {
+                    const d = max - min;
+                    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                    switch (max) {
+                        case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                        case g: h = (b - r) / d + 2; break;
+                        case b: h = (r - g) / d + 4; break;
+                    }
+                    h /= 6;
+                }
+                return { h: h * 360, s: s * 100, l: l * 100 };
+            }
+
+            function hslToRgb(h, s, l) {
+                h /= 360;
+                s /= 100;
+                l /= 100;
+                let r, g, b;
+
+                if (s === 0) {
+                    r = g = b = l; // achromatic
+                } else {
+                    const hue2rgb = (p, q, t) => {
+                        if (t < 0) t += 1;
+                        if (t > 1) t -= 1;
+                        if (t < 1 / 6) return p + (q - p) * 6 * t;
+                        if (t < 1 / 2) return q;
+                        if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+                        return p;
+                    };
+                    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+                    const p = 2 * l - q;
+                    r = hue2rgb(p, q, h + 1 / 3);
+                    g = hue2rgb(p, q, h);
+                    b = hue2rgb(p, q, h - 1 / 3);
+                }
+                return { r: Math.round(r * 255), g: Math.round(g * 255), b: Math.round(b * 255) };
+            }
+
+            function rgbToHex(r, g, b) {
+                return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase();
+            }
+
+            const rgb = hexToRgb(hexColor);
+            let { h, s, l } = rgbToHsl(rgb.r, rgb.g, rgb.b);
+
+            const palette = [];
+            palette.push(hexColor); // Always include the base color
+
+            switch (harmonyType) {
+                case 'analogous':
+                    palette.push(rgbToHex(hslToRgb((h + 30) % 360, s, l).r, hslToRgb((h + 30) % 360, s, l).g, hslToRgb((h + 30) % 360, s, l).b));
+                    palette.push(rgbToHex(hslToRgb((h - 30 + 360) % 360, s, l).r, hslToRgb((h - 30 + 360) % 360, s, l).g, hslToRgb((h - 30 + 360) % 360, s, l).b));
+                    palette.push(rgbToHex(hslToRgb((h + 60) % 360, s, l).r, hslToRgb((h + 60) % 360, s, l).g, hslToRgb((h + 60) % 360, s, l).b));
+                    palette.push(rgbToHex(hslToRgb((h - 60 + 360) % 360, s, l).r, hslToRgb((h - 60 + 360) % 360, s, l).g, hslToRgb((h - 60 + 360) % 360, s, l).b));
+                    break;
+                case 'complementary':
+                    palette.push(rgbToHex(hslToRgb((h + 180) % 360, s, l).r, hslToRgb((h + 180) % 360, s, l).g, hslToRgb((h + 180) % 360, s, l).b));
+                    // Add some tints/shades for variety
+                    palette.push(rgbToHex(hslToRgb(h, s * 0.7, Math.min(100, l + 20)).r, hslToRgb(h, s * 0.7, Math.min(100, l + 20)).g, hslToRgb(h, s * 0.7, Math.min(100, l + 20)).b));
+                    palette.push(rgbToHex(hslToRgb((h + 180) % 360, s * 0.7, Math.min(100, l + 20)).r, hslToRgb((h + 180) % 360, s * 0.7, Math.min(100, l + 20)).g, hslToRgb((h + 180) % 360, s * 0.7, Math.min(100, l + 20)).b));
+                    break;
+                case 'triadic':
+                    palette.push(rgbToHex(hslToRgb((h + 120) % 360, s, l).r, hslToRgb((h + 120) % 360, s, l).g, hslToRgb((h + 120) % 360, s, l).b));
+                    palette.push(rgbToHex(hslToRgb((h + 240) % 360, s, l).r, hslToRgb((h + 240) % 360, s, l).g, hslToRgb((h + 240) % 360, s, l).b));
+                    // Add lighter versions
+                    palette.push(rgbToHex(hslToRgb(h, s, Math.min(100, l + 20)).r, hslToRgb(h, s, Math.min(100, l + 20)).g, hslToRgb(h, s, Math.min(100, l + 20)).b));
+                    break;
+                case 'monochromatic':
+                    palette.push(rgbToHex(hslToRgb(h, s, Math.min(100, l + 20)).r, hslToRgb(h, s, Math.min(100, l + 20)).g, hslToRgb(h, s, Math.min(100, l + 20)).b));
+                    palette.push(rgbToHex(hslToRgb(h, s, Math.max(0, l - 20)).r, hslToRgb(h, s, Math.max(0, l - 20)).g, hslToRgb(h, s, Math.max(0, l - 20)).b));
+                    palette.push(rgbToHex(hslToRgb(h, Math.min(100, s + 15), l).r, hslToRgb(h, Math.min(100, s + 15), l).g, hslToRgb(h, Math.min(100, s + 15), l).b));
+                    palette.push(rgbToHex(hslToRgb(h, Math.max(0, s - 15), l).r, hslToRgb(h, Math.max(0, s - 15), l).g, hslToRgb(h, Math.max(0, s - 15), l).b));
+                    break;
+            }
+
+            paletteDisplay.innerHTML = '';
+            palette.forEach(color => {
+                const swatch = document.createElement('div');
+                swatch.className = 'color-swatch';
+                swatch.style.backgroundColor = color;
+                swatch.innerHTML = `<span>${color}</span>`;
+                paletteDisplay.appendChild(swatch);
+            });
+
+            resultsDisplay.style.display = 'block';
+        });
+
+        // Font Pairing Tool
+        document.getElementById('font-pairing-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const headingFontInput = document.getElementById('heading-font');
+            const bodyFontCategory = document.getElementById('body-font-category').value;
+            const headingFontError = document.getElementById('heading-font-error');
+            const resultsDisplay = document.getElementById('font-pairing-results');
+            const pairingDisplay = document.getElementById('pairing-display');
+
+            // --- Validation ---
+            const headingFont = headingFontInput.value.trim();
+            if (headingFont === '') {
+                headingFontError.textContent = 'Please enter a heading font name.';
+                headingFontError.style.display = 'block';
+                resultsDisplay.style.display = 'none';
+                return;
+            }
+            headingFontError.style.display = 'none';
+
+            // --- Font Pairing Logic (Simplified) ---
+            // In a real application, this would involve a database of fonts, categorization, and more complex matching.
+            // For this example, we'll use a hardcoded set of suggestions.
+            const suggestions = {
+                'sans-serif': ['Open Sans', 'Lato', 'Montserrat'],
+                'serif': ['Merriweather', 'Playfair Display', 'Lora'],
+                'monospace': ['Source Code Pro', 'Fira Code', 'Roboto Mono'],
+                'display': ['Oswald', 'Anton', 'Bebas Neue']
+            };
+
+            const selectedBodyFonts = suggestions[bodyFontCategory] || [];
+            const commonHeading = headingFont.toLowerCase();
+            const recommendedPairings = [];
+
+            // Add base heading font to Google Fonts list dynamically if not already present
+            // This is a simplified approach, a robust solution would check if font is available via Google Fonts API.
+            const head = document.head;
+            const linkId = `font-link-${headingFont.replace(/\s/g, '-')}`;
+            if (!document.getElementById(linkId)) {
+                const link = document.createElement('link');
+                link.id = linkId;
+                link.rel = 'stylesheet';
+                link.href = `https://fonts.googleapis.com/css2?family=${headingFont.replace(/\s/g, '+')}:wght@400;700&display=swap`;
+                head.appendChild(link);
+            }
+
+            if (selectedBodyFonts.length > 0) {
+                // Try to find a good contrasting or harmonious body font
+                // If heading is a very common Sans-serif, suggest a serif, and vice versa.
+                if (commonHeading.includes('roboto') || commonHeading.includes('inter') || commonHeading.includes('open sans')) {
+                    // Popular sans-serif heading: suggest serif or contrasting sans-serif
+                    if (bodyFontCategory === 'serif') {
+                        recommendedPairings.push('Merriweather');
+                        recommendedPairings.push('Playfair Display');
+                    } else if (bodyFontCategory === 'sans-serif') {
+                        recommendedPairings.push('Lato');
+                        recommendedPairings.push('Montserrat');
+                    }
+                } else if (commonHeading.includes('playfair display') || commonHeading.includes('merriweather')) {
+                    // Popular serif heading: suggest sans-serif
+                    if (bodyFontCategory === 'sans-serif') {
+                        recommendedPairings.push('Open Sans');
+                        recommendedPairings.push('Inter');
+                    }
+                }
+
+                // If no specific recommendation, just take the top few from the category
+                if (recommendedPairings.length === 0) {
+                    recommendedPairings.push(...selectedBodyFonts.slice(0, 2));
+                }
+            } else {
+                recommendedPairings.push('No specific suggestions for this category, try a common one.');
+            }
+
+            pairingDisplay.innerHTML = '';
+
+            recommendedPairings.forEach(bodyFont => {
+                const pairItem = document.createElement('div');
+                pairItem.className = 'font-pair-item';
+
+                // Add body font to Google Fonts list dynamically
+                const bodyLinkId = `font-link-${bodyFont.replace(/\s/g, '-')}`;
+                if (!document.getElementById(bodyLinkId) && bodyFont !== 'No specific suggestions for this category, try a common one.') {
+                    const link = document.createElement('link');
+                    link.id = bodyLinkId;
+                    link.rel = 'stylesheet';
+                    link.href = `https://fonts.googleapis.com/css2?family=${bodyFont.replace(/\s/g, '+')}:wght@400;700&display=swap`;
+                    head.appendChild(link);
+                }
+
+                pairItem.innerHTML = `
+                    <p><strong>Heading:</strong> ${headingFont}</p>
+                    <h5 class="heading-preview" style="font-family: '${headingFont}', var(--font-family-primary);">Design Excellence.</h5>
+                    <p><strong>Body:</strong> ${bodyFont}</p>
+                    <p class="body-preview" style="font-family: '${bodyFont}', var(--font-family-primary);">Discover complementary font combinations for headings and body text to enhance readability and aesthetics.</p>
+                `;
+                pairingDisplay.appendChild(pairItem);
+            });
+
+            resultsDisplay.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
